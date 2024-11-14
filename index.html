@@ -1,45 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Informações sobre acidentes de trabalho no Brasil, causas, estatísticas, leis e prevenção.">
     <title>Acidentes de Trabalho no Brasil</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Link para o Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
         <h1>Acidentes de Trabalho no Brasil</h1>
         <nav>
             <ul>
-                <li><a href="#grafico">Gráficos</a></li>
-                <li><a href="#informacoes">Informações</a></li>
-                <li><a href="#prevencao">Prevenção</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#causas">Causas</a></li>
+                <li><a href="#estatisticas">Estatísticas</a></li>
+                <li><a href="#leis">Leis e Prevenção</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="grafico">
-        <h2>Estatísticas de Acidentes de Trabalho</h2>
-        <canvas id="graficoAcidentes"></canvas>
+    <section id="sobre">
+        <h2>O que são acidentes de trabalho?</h2>
+        <p>Os acidentes de trabalho são eventos inesperados que causam danos à saúde ou integridade física do trabalhador durante a execução de suas atividades profissionais. No Brasil, esses acidentes são um problema recorrente e exigem atenção e medidas eficazes de prevenção.</p>
     </section>
 
-    <section id="informacoes">
-        <h2>O que são Acidentes de Trabalho?</h2>
-        <p>Os acidentes de trabalho são aqueles que ocorrem durante a execução de atividades profissionais e podem resultar em lesões, doenças ou até a morte do trabalhador. Eles podem ser causados por fatores como falhas de segurança, falta de treinamento, ou condições inadequadas no ambiente de trabalho.</p>
+    <section id="causas">
+        <h2>Causas Comuns de Acidentes de Trabalho</h2>
+        <ul>
+            <li>Falta de Equipamentos de Proteção Individual (EPIs)</li>
+            <li>Condições inseguras no ambiente de trabalho</li>
+            <li>Falta de treinamento adequado</li>
+            <li>Estresse e cansaço excessivo</li>
+            <li>Má gestão de riscos</li>
+        </ul>
     </section>
 
-    <section id="prevencao">
-        <h2>Como Prevenir Acidentes de Trabalho?</h2>
-        <p>A prevenção de acidentes de trabalho envolve medidas como treinamento constante, uso de Equipamentos de Proteção Individual (EPIs), melhorias nas condições de trabalho e conscientização dos trabalhadores sobre a segurança.</p>
+    <section id="estatisticas">
+        <h2>Estatísticas de Acidentes de Trabalho no Brasil</h2>
+        <p>De acordo com o INSS, mais de 700 mil acidentes de trabalho são registrados anualmente no Brasil. Isso representa uma grande perda de vidas e produtividade no país.</p>
+        <div class="estatisticas">
+            <p><strong>200 mil acidentes de trabalho por ano.</strong></p>
+            <p><strong>4 mil mortes anuais em acidentes de trabalho.</strong></p>
+            <p><strong>Setores mais afetados: Construção Civil, Indústria e Agricultura.</strong></p>
+        </div>
+    </section>
+
+    <section id="leis">
+        <h2>Leis e Medidas de Prevenção</h2>
+        <p>O Brasil possui uma legislação robusta para a prevenção de acidentes de trabalho, incluindo a Consolidação das Leis do Trabalho (CLT) e as Normas Regulamentadoras (NRs) do Ministério do Trabalho.</p>
+        <ul>
+            <li><strong>NR 6</strong> - Equipamento de Proteção Individual (EPI)</li>
+            <li><strong>NR 18</strong> - Condições de Trabalho na Construção Civil</li>
+            <li><strong>NR 35</strong> - Trabalhos em Altura</li>
+            <li><strong>NR 12</strong> - Segurança no Trabalho com Máquinas e Equipamentos</li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
     </section>
 
     <footer>
-        <p>Fonte: Ministério do Trabalho e Emprego | Dados de 2023</p>
+        <p>&copy; 2024 Acidentes de Trabalho no Brasil. Todos os direitos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+
